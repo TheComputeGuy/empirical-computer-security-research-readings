@@ -1,0 +1,24 @@
+# Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests
+### Sam Burnett (Georgia Tech) and Nick Feamster (Princeton)
+### SIGCOMM ’15 (August 2015) ([Link](https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p653.pdf))
+
+---
+
+1. What are the paper's contributions and what did you like about the paper?  
+&nbsp;&nbsp;&nbsp;&nbsp; - The paper aims to do a wide study of internet censorship using a novel methodology of large-scale measurements. The authors build a system to generate small "tasks" that website visitors can complete on their browsers, to test the presence and extent of censorship on their network. I liked the approach taken by the authors towards measurement, making it easy for everyone involved in the process - the authors, webmasters and website visitors, including not adding any overhead to their internet experience.  
+
+2. What are questionable parts of the paper and its major limitations, excluding any aspects related to ethics? (E.g., methodology issues, detail omissions, presentation problems)  
+&nbsp;&nbsp;&nbsp;&nbsp; - Although the study design itself has been discussed in depth in the paper, due to external factors, it does not provide any discussion on the results of the measurement, which sound interesting give the breadth of measurement involved, along with multi-modal integration of other information like region information, longitudinal information, etc.  
+&nbsp;&nbsp;&nbsp;&nbsp; - Other information that could've been inferred would've been looking at what modes of network censorship are used by different regions, and how they evolve with time.  
+
+3. What was unclear about the work, or what questions do you have?  
+&nbsp;&nbsp;&nbsp;&nbsp; - Not exactly about the work itself, but this paper had been recommended to me in the past as well, and the big banner by SIGCOMM at the top had attracted my attention. What isn't clear to me here is why there's a huge furore over the ethics of such a study. In the current state of the web, users are always fetching resources in the background, most of the times, without any express consent. This includes ad scripts and at times, malware. Given that the authors had gone to great lengths to ensure sandboxing of iframes and assigning tasks that won't affect the visitor experience on the website, and selecting resources and domains which won't bring the participants in trouble with the censors, it sounds to me like a reasonably ethical study.  
+
+4. Why is understanding censorship behavior particularly relevant to security/privacy? Note, this is not asking why understanding censorship is important, but rather what aspects of censorship are closely related to security/privacy aspects.  
+&nbsp;&nbsp;&nbsp;&nbsp; - Censorship is an important aspect of studying internet systems. Given the importance of the web in the flow of information in today's society, studying censorship gains importance in looking at the impact of computer systems on society, especially democracy. Having said that, there are more local interests to study censorship with respect to security and privacy.  
+&nbsp;&nbsp;&nbsp;&nbsp; - Going on the same tangent of information flow, we can take an example. One major aim of activists and privacy-conscious people is to use certain platforms with higher privacy and security for secure information exchange. Censorship of such platforms turns out to be harmful for such people, as well as information exchange in general, leading to the growth of less secure alternatives.  
+
+5. (Completely Open Ended Question) What are your thoughts on the ethics of this paper's measurements (particularly after reading Section 8)?  
+&nbsp;&nbsp;&nbsp;&nbsp; - Using tools like encore without knowledge can, depending on the country's censors and rules, go as far as endangering someone's life, if the tool makes request to certain "dangerous" domains. Hence, an opt-out might be a good idea to be included, along with a link to information about the study, what gets recorded and optionally, information about what measurements happened on their device.  
+&nbsp;&nbsp;&nbsp;&nbsp; - Having said that, I feel that this study took great efforts in trying to minimize the risk to uninformed clients (as mentioned in part 3 of this writeup). I do not agree with the rejection of IRB oversight by both the IRBs, given how much attraction it received from the community, pointing out the need for dialogue and overhaul of IRB guidelines too.  
+&nbsp;&nbsp;&nbsp;&nbsp; - Although one cannot reduce risks to zero, I felt that the authors put in many efforts to minimize risk, and hence, the ethical concerns are overblown in my opinion.  
